@@ -18,7 +18,7 @@ http://www.springframework.org/schema/context http://www.springframework.org/sch
 	<context:property-placeholder location="classpath:properties\${SANDBOX_DOMAIN}\${SANDBOX_SERVER_SHORT_NAME}\${SANDBOX_NAME}.properties"/>
 <!-- 	<context:property-placeholder location="file:\${SANDBOX_CONF_HOME}\properties\${SANDBOX_DOMAIN}\${SANDBOX_SERVER_SHORT_NAME}\${SANDBOX_NAME}.properties"/> -->
 				
-    <http:listener-config name="tshirt-httpListenerConfig" host="${server.full.name}" port="${application.http.port}"  doc:name="HTTP Listener Configuration"/>
+    <http:listener-config name="tshirt-httpListenerConfig" host="${application.http.host}" port="${application.http.port}"  doc:name="HTTP Listener Configuration"/>
     <apikit:config name="tshirt-config" raml="tshirt.raml" consoleEnabled="false" doc:name="Router"/>
     <flow name="tshirt-main">
         <http:listener config-ref="tshirt-httpListenerConfig" path="/api/*" doc:name="HTTP"/>
