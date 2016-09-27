@@ -25,7 +25,7 @@ public class HttpServiceStepDefs extends FunctionalTestCase {
 
 	@Override
 	protected String getConfigFile() {
-		return "tshirt.xml";
+		return "tshirt-app.xml";
 	}
 
 	@Given("^The Http Service is running$")
