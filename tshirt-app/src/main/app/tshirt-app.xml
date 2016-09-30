@@ -30,7 +30,7 @@ http://www.springframework.org/schema/context http://www.springframework.org/sch
         <apikit:console config-ref="tshirt-config" doc:name="APIkit Console"/>
     </flow>
     <flow name="get:/products:tshirt-config">
-        <set-payload value="[&#xA;  {&#xA;    &quot;productCode&quot;: &quot;TS&quot;,&#xA;    &quot;size&quot;: &quot;S&quot;,&#xA;    &quot;description&quot;: &quot;Small T-shirt&quot;,&#xA;    &quot;count&quot;: 30&#xA;  },&#xA;  {&#xA;    &quot;productCode&quot;: &quot;TS&quot;,&#xA;    &quot;size&quot;: &quot;M&quot;,&#xA;    &quot;description&quot;: &quot;Medium T-shirt&quot;,&#xA;    &quot;count&quot;: 22&#xA;  }&#xA;]" doc:name="Set Payload"/>
+        <set-payload value="[&#xA;  {&#xA;    &quot;productCode&quot;: &quot;TS&quot;,&#xA;    &quot;size&quot;: &quot;S&quot;,&#xA;    &quot;description&quot;: &quot;SMALL T-shirt&quot;,&#xA;    &quot;count&quot;: 30&#xA;  },&#xA;  {&#xA;    &quot;productCode&quot;: &quot;TS&quot;,&#xA;    &quot;size&quot;: &quot;M&quot;,&#xA;    &quot;description&quot;: &quot;Medium T-shirt&quot;,&#xA;    &quot;count&quot;: 22&#xA;  }&#xA;]" doc:name="Set Payload"/>
     </flow>
     <flow name="get:/orders/status:tshirt-config">
         <set-payload value="{&#xA;  &quot;orderId&quot;: &quot;4321&quot;,&#xA;  &quot;status&quot;: &quot;Delivered&quot;,&#xA;  &quot;size&quot;: &quot;M&quot;&#xA;}" doc:name="Set Payload"/>
